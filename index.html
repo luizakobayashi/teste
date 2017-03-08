@@ -1,22 +1,29 @@
-<!DOCTYPE html>
-    <html ng-app="testeOnline">
-        <head>
-            <title>Negociação de mercadorias</title>
-            <link rel="stylesheet" type="text/css" href="bootstrap/bootstrap.css">
-            <link rel="icon" href="assets/layouts/business-hands-icon.png" type="image/x-icon" />
-            <link rel="shortcut icon" href="assets/layouts/business-hands-icon.png" type="image/x-icon" />
-            <!--BOOTSTRAP PLUGINS-->
-            <link href="assets/libs/bootstrap/angular-bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css" />
-            <link href="assets/libs/bootstrap/bootstrap/bootstrap.css" rel="stylesheet" type="text/css" />
-        </head>
-        <body>
-            <!--CORE JQUERY PLUGINS-->
-            <script src="assets/libs/bootstrap/bootstrap/bootstrap.js" type="text/javascript"></script>
-            <script src="assets/libs/bootstrap/angular-bootstrap/ui-bootstrap-tpls.js" type="text/javascript"></script>
-            <script src="assets/libs/bootstrap/angular-bootstrap/ui-bootstrap.js" type="text/javascript"></script>
-            <!--CORE ANGULAR PLUGINS-->
-            <script src="assets/libs/angularjs/angular.js" type="text/javascript"></script>
-            <!--ROUTER PROVIDER-->
-            <script src="app/app.routes.js" type="text/javascript"></script>
-        </body>
-    </html>
+<html ng-app="testeOnline">
+    <head>
+        <meta charset="UTF-8">
+        <title>Negociação de mercadorias</title>
+        <!--BOOTSTRAP LIB-->
+        <link rel="stylesheet" type="text/css" href="bootstrap/bootstrap.css">
+        <!--CSS-->
+        <link rel="stylesheet" type="text/css" href="css/app.css">
+        <!--PAGE ICON-->
+        <link rel="icon" href="assets/layouts/business-hands-icon.png" type="image/x-icon" />
+        <link rel="shortcut icon" href="assets/layouts/business-hands-icon.png" type="image/x-icon" />
+        <!--CORE ANGULAR PLUGINS-->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.27/angular.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+        <!--NG STORAGE PLUGIN-->
+        <script src="ngStorage.js"></script>
+        <!--ROUTER PROVIDER-->
+        <script src="app/app.routes.js" type="text/javascript"></script>
+        <!--INICIALIZAÇÃO DA APLICAÇÃO-->
+        <script src="app/app.js"></script>
+        <script src="app/service.js"></script>
+        <script src="app/negociaMercadoriaCtrl.js"></script>
+        <script src="app/app.routes.js"></script>
+        <script src="app/detalhesMercadoriaCtrl.js"></script>
+    </head>
+    <body>
+        <div ng-view></div>
+    </body>
+</html>
